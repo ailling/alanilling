@@ -8,11 +8,3 @@ include
 .pydevproject
 .settings
 *.resources.prefs
-*.png
-*.jpg
-*.gif
-*.jpeg
-__profile
-__css
-__js
-
