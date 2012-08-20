@@ -2,7 +2,7 @@ body{
 	   border-top: 5px solid #CC6633;
 	   padding-top:  20px;
      padding-bottom: 20px;
-	   background: url('../img/style-orange/bg.png') top left repeat-x #ffffff;
+	   background: url('/static/img/style-bleu/bg.png') top left repeat-x #ffffff;
      color: #000000;
 }
 

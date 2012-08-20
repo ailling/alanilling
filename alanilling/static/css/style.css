@@ -2,7 +2,7 @@ body{
 	   border-top: 5px solid #3A7AA6;
 	   padding-top:  20px;
      padding-bottom: 20px;
-	   background: url('../img/texture.jpg') top left repeat;
+	   background: url('/static/img/texture.jpg') top left repeat;
 }
 
 #cv.hero-unit{

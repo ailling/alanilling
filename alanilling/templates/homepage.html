@@ -4,28 +4,22 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Curriculum Vitae | CV</title>
+		<title>Alan Illing's Resume</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Curriculum Vitae, CV, Jobs">
-		<meta name="author" content="Kastoss">
-	
+		<meta name="author" content="Alan Illing">
+		
 		<!-- Le styles -->
 		
-		<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
-		<link class="css" href="{% static "css/style.css" %}" rel='stylesheet' type='text/css' />
-		<!--
-		<link rel="stylesheet" type="text/css" href="{% static "css/zocial.css" %}" />
-		-->
+		<link href="{% static "/static/css/bootstrap.min.css" %}" rel="stylesheet">
+		<link class="css" href="{% static "/static/css/style.css" %}" rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" type="text/css" href="{% static "/static/css/zocial.css" %}" />
 		
-		<link rel="stylesheet" type="text/css" href="{% static "css/orange.css" %}" />
-	
-		<script src="{% static "js/jquery.js" %}"></script>
-		<script src="{% static "js/bootstrap.min.js" %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static "/static/css/orange.css" %}" />
 		
-		<!--
-		<script src="{% static "js/jquery.js" %}"></script>
-		<script src="{% static "js/bootstrap.min.js" %}"></script>
-		-->
+		<script src="{% static "/static/js/jquery.js" %}"></script>
+		<script src="{% static "/static/js/bootstrap.min.js" %}"></script>
+		
 		
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -33,8 +27,11 @@
 		<![endif]-->
 		
 		<!-- Le fav and touch icons -->
+		
+		<link rel="stylesheet" href="{% static "/static/css/font/font-awesome.css" %}">
+		
 	</head>
-
+	
 	<body>
 		<div class="container">
 			<div class="row-fluid">
@@ -43,7 +40,15 @@
 						<h1>Alan Illing</h1>
 					</div>
 					<div class="span6">
-						<a href="javascript:" class="pull-right btn"> <i class="icon-download"></i> PDF</a>
+						<div>
+							
+				             <a href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href)+'&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )" 
+				                              title="PDF" class="pull-right btn">
+				                              <i class="icon-download"></i> PDF</a>
+				             <noscript>
+				                    <a href="http://www.pdfspot.com" title="PDF" class="pull-right btn"><i class="icon-download"></i> PDF</a>
+				             </noscript>
+						</div>
 					</div>
 				</header>
 			</div>
@@ -51,17 +56,40 @@
 			
 			<div class="row-fluid blok-2">
 				<div class="span2">
-					<img src="{% static "img/photo.jpg" %}" alt="" class="thumbnail pull-left"/>
+					<img src="{% static "/static/img/me.png" %}" alt="" class="thumbnail pull-left"/>
 				</div>
 				<div class="span5">
-					<h2>Softwaree Engineer, Entrepreneur, math nerd</h2>
-					<p>Pellentesque sollicitudin congue diam, et gravida leo posuere at. Nunc <strong>fermentum erat</strong> at diam convallis vel porttitor purus congue. Proin blandit, odio ac aliquet fermentum, lectus est dictum nisl, ac elementum dui ante et ipsum. </p>  
+					<h2>Software engineer, entrepreneur, geek</h2>
+					<p>
+						I'm a <strong>passionate</strong> engineer who <strong>loves</strong> technology.
+						I focus on web, mobile and back-end cloud computing technologies.
+						My approach to software development is to identify and solve problems by asking the <strong>right</strong> questions
+						and thinking abstractly. I particularly enjoy problems of a quantitative or algorithmic nature. 
+					</p>
 				</div>
 				
 				<div class="span5 information">
-					<div><img src="{% static "img/icon/smart_phone.png" %}" /> 773 888 2179</div>
-					<div><img src="{% static "img/icon/monitor.png" %}" /> <a href="#">alanilling.com</a></div>
-					<div><img src="{% static "img/icon/address-book.png" %}" /> Chicago, IL</div>
+					<div>
+						<i class="icon-map-marker"></i> &nbsp; <a href="https://maps.google.com/maps?q=belmont+and+ashland,+chicago+il&hl=en&ll=41.939829,-87.666328&spn=0.009289,0.020084&sll=41.833733,-87.731964&sspn=0.595511,1.2854&hnear=N+Ashland+Ave+%26+W+Belmont+Ave,+Chicago,+Cook,+Illinois+60657&t=m&z=16" target="_blank">I'm in Chicago</a>
+					</div>
+					
+					<div>
+						<i class="icon-github"></i> &nbsp; <a href="https://github.com/ailling" target="_blank">Public projects</a>
+					</div>
+					
+					<div>
+						<i class="icon-linkedin-sign"></i> &nbsp; <a href="http://www.linkedin.com/pub/alan-illing/33/84a/2b9" target="_blank">Network with me</a>
+					</div>
+					
+					<div>
+						<i class="icon-twitter-sign"></i> &nbsp; <a href="http://it.twitter.com/alanilling" target="_blank">Follow me</a>
+					</div>
+					
+					<div>
+						<iframe src="http://ghbtns.com/github-btn.html?user=ailling&type=follow&count=true"
+  							allowtransparency="true" frameborder="0" scrolling="0" width="165px" height="20px"></iframe>
+					</div>
+					
 				</div>
 			</div>
 			<hr class="soften"/>
@@ -75,21 +103,79 @@
 							</li>
 						</ul>
 						
-						<h2>Cosy Interfaces, Full-time </h2>
-						<span class="label">Dual Major, Web Design and English - 3.9 GPA</span>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla mcorper suscipit lobortis nisl ut aliquip. </p>
+						<h2>Project Fixup </h2>
+						<span class="label">Co-founder and Chief Technology Officer</span>
+						<p>
+							<a href="https://www.projectfixup.com" target="_blank">Project Fixup</a> skips the nonsense and work of online dating
+							by completely arranging a date for you, including the person, venue, time and reservations.
+						</p>
+						<p>
+							We use smart people and smart algorithms to productively find compatibility among our members and logistically arrange dates.
+						</p>
+						
+						<p>
+							Responsibilities:
+						</p>
+						<ul>
+							<li>Building and maintaining the website and mobile apps</li>
+							<li>Front-end user experience</li>
+							<li>Back-end database administration and maintenance</li>
+							<li>Manage technology research and development</li>
+							<li>Automated testing (unit, integration and browser testing)</li>
+						</ul>
 						
 						<hr class="soften"/>
 						
-						<h2>SENIOR WEB DEVELOPER </h2>
-						<span class="label">Dual Major, Web Design and English - 3.9 GPA</span>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla mcorper suscipit lobortis nisl ut aliquip. </p>
+						<h2>Software Engineer II </h2>
+						<span class="label">Twitch, LLC</span>
+						<p>
+							Twitch is a trading firm located at the Chicago Board of Trade (CBOT).
+						</p>
+						
+						<p>
+							Responsibilities:
+						</p>
+						<ul>
+							<li>Trading strategy development on new products</li>
+							<li>Back-end P&amp;L tracking and reporting</li>
+							<li>Quantitative analysis of market data, strategy performance and parameter optimization</li>
+						</ul>
 						
 						<hr class="soften"/>
 						
-						<h2>JUNIOR WEB DEVELOPER  </h2>
-						<span class="label">Dual Major, Web Design and English - 3.9 GPA</span>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla mcorper suscipit lobortis nisl ut aliquip. </p>
+						<h2>Quantitative Analyst / Software Developer </h2>
+						<span class="label">Cornerstone Trading, LLC</span>
+						
+						<p>
+							Cornerstone was a proprietary trading group located at the Chicago Board Options Excahnge (CBOE).
+							Trading methodologies were similar to hedge funds; they underwent massive restructing in 2009
+							in the face of financial difficulties.
+						</p>
+						
+						<p>Responsibilities:</p>
+						<ul>
+							<li>Developed mathematical models for trading options</li>
+							<li>Software development for algorithmic trade execution</li>
+							<li>Analyzed mathematical models for trading and historical strategy performance</li>
+							<li>Research on GPU parallel programming, specifically nVidia CUDA</li>
+						</ul>
+						
+						<hr class="soften"/>
+						
+						<h2>Assistant Trader </h2>
+						<span class="label">Cornerstone Trading, LLC</span>
+						
+						<p>
+							I was initially employed by Cornerstone out of college.
+							I decided to go back to graduate school in pursuit of challenging work, but
+							I left the firm on good terms and was re-employed after finishing graduate school.
+						</p>
+						
+						<p>Responsibilities:</p>
+						<ul>
+							<li>Built tools for automating P&amp;L reporting and trade analysis and strategy performance</li>
+							<li>Built back-end systems for automating trade execution</li>
+						</ul>
 						
 					</div>
 				</div>
@@ -100,20 +186,36 @@
 					</ul>
 					
 					
-					<h2>Boston State University</h2>
-					<span class="label">Dual Major, Web Design and English - 3.9 GPA</span>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla mcorper suscipit lobortis nisl ut aliquip. </p>
-					
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Consectetuer adipiscing elit</li>
-						<li>Sed diam nonummy nibh</li>
-					</ul>
+					<h2>University of Chicago</h2>
+					<span class="label">M.S. Computer Science, expected 2012. GPA: 4.0</span>
+					<p>
+						Expected 2012. Coursework focus on numerical methods, distributed and parallel computing, algorithms, unix programming, networks and security.
+					</p>
 					
 					<hr class="soften"/>
-					<h2>Vegas State University</h2>
-					<span class="label">Dual Major, Web Design and English - 3.9 GPA</span>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqua erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla mcorper suscipit lobortis nisl ut aliquip. </p>
+					<h2>Univeristy of Illinois, Champaign-Urbana</h2>
+					<span class="label">M.S. Finance, May 2008</span>
+					<p>
+						Awarded as a Ph.D. candidate for partial completion of the docorate program.
+						All courses were taken at the Ph.D. level and emphasized mathematics, especially stochastic calculus, advanced probability and statistics, and econometrics.
+						I left the docorate program after 2 years.
+					</p>
+					
+					<hr class="soften"/>
+					<h2>Univeristy of Illinois, Champaign-Urbana</h2>
+					<span class="label">B.S. Mathematics &amp; Actuarial Science, May 2006</span>
+					<p>
+						Coursework emphasized engineering and actuarial-related mathematics, including
+						ordinary and partial differential equations, probability &amp; statistics, analysis of loss distributions and finance.
+						I additionally took several computer science courses including theory, data structures, databases, parallel programming and several courses on various programming languages including C, C++ and Java.
+					</p>
+					
+					<p>Awards</p>
+					<ul>
+						<li>Magna Cum Laude</li>
+						<li>Actuarial Science Department High Distinction</li>
+						<li>Phi Scholars Member</li>
+					</ul>
 				</div>
 			</div>
 			
@@ -122,46 +224,39 @@
 			
 			<div class="row-fluid skills">
 				<div class="span8">
-					<h2>Portfolios</h2>
+					<h2>Recent work</h2>
 					<ul class="thumbnails">
 						<li class="span5">
-							<a class="thumbnail" href="#">
-								<img alt="" src="img/andruid.jpg">
+							<a class="thumbnail" href="https://www.projectfixup.com/" target="_blank">
+								<img alt="" src="{% static "/static/img/logos/projectfixup.png" %}">
 							</a>
 						</li>
 						
 						<li class="span3">
-							<a class="thumbnail" href="#">
-								<img alt="" src="img/css.jpg">
+							<a class="thumbnail" href="http://www.djangoperformance.com/" target="_blank">
+								<img alt="" src="{% static "/static/img/logos/djp.png" %}">
 							</a>
 						</li>
 						
 						<li class="span3">
-							<a class="thumbnail" href="#">
-								<img alt="" src="img/css3.jpg">
+							<a class="thumbnail" href="http://pairstrader.com/" target="_blank">
+								<img alt="" src="{% static "/static/img/logos/pairstrader.png" %}">
 							</a>
 						</li>
 						
 						<li class="span3">
-							<script src="{% static "js/jquery.js" %}"></script>
-							<script src="{% static "js/bootstrap.min.js" %}"></script>
-							<a class="thumbnail" href="#">
-								<img alt="" src="img/html5.jpg">
-							</a>
-						</li>
-						
-						<li class="span3">
-							<a class="thumbnail" href="#">
-								<img alt="" src="img/html5.jpg">
+							<a class="thumbnail" href="http://euroamericandiet.com/" target="_blank">
+								<img alt="" src="{% static "/static/img/logos/euroamericandiet.png" %}">
 							</a>
 						</li>
 					</ul>
 				</div>
 				
+				<!--
 				<div class="span4">
-					<h2>Quick Contact Form</h2>
+					<h2>Get in touch!</h2>
 					<form class="contact">
-						<label><strong>Name :</strong></label>
+						<label><strong>Your Name :</strong></label>
 						<input type="text" placeholder="Name ..." class="">
 						
 						<label><strong>E-Mail :</strong></label>
@@ -174,6 +269,7 @@
 						<button class="btn" type="submit"><i class="icon-envelope"></i> Submit</button>
 					</form>
 				</div>
+				-->
 			</div>
 		</div>
 	</body>
