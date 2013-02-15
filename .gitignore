@@ -8,3 +8,4 @@ include
 .pydevproject
 .settings
 *.resources.prefs
+*.xml
