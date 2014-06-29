@@ -9,3 +9,5 @@ include
 .settings
 *.resources.prefs
 *.xml
+*.idea/
+*.idea
