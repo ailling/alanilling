@@ -25,9 +25,7 @@ MANAGERS = ADMINS
 SETTINGS_PATH = os.path.dirname(__file__)
 sys.path.append(SETTINGS_PATH)
 
-CURRENT_THEME = 'simplecv'
-
-TEMPLATE_PATH = os.path.join(SETTINGS_PATH, 'templates', CURRENT_THEME)
+TEMPLATE_PATH = os.path.join(SETTINGS_PATH, 'templates')
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -69,8 +67,8 @@ MEDIA_URL = ''
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 #STATIC_ROOT = ''
-STATIC_ROOT = os.path.join(SETTINGS_PATH, 'static', CURRENT_THEME)
-ASSETS_ROOT = os.path.join(SETTINGS_PATH, 'assets', CURRENT_THEME)
+STATIC_ROOT = os.path.join(SETTINGS_PATH, 'static')
+ASSETS_ROOT = os.path.join(SETTINGS_PATH, 'assets')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"

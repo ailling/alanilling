@@ -1,245 +1,340 @@
-{% load static %}
-
+{% load static from staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Alan Illing's Resume</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Curriculum Vitae, CV, Jobs">
-		<meta name="author" content="Alan Illing">
-		
-		<!-- Le styles -->
-		
-		<link href="{% static "/static/css/bootstrap.min.css" %}" rel="stylesheet">
-		<link class="css" href="{% static "/static/css/style.css" %}" rel='stylesheet' type='text/css' />
-		<link rel="stylesheet" type="text/css" href="{% static "/static/css/zocial.css" %}" />
-		
-		<link rel="stylesheet" type="text/css" href="{% static "/static/css/orange.css" %}" />
-		
-		<script src="{% static "/static/js/jquery.js" %}"></script>
-		<script src="{% static "/static/js/bootstrap.min.js" %}"></script>
-		
-		
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		
-		<!-- Le fav and touch icons -->
-		
-		<link rel="stylesheet" href="{% static "/static/css/font/font-awesome.css" %}">
-		
-	</head>
-	
-	<body>
-		<div class="container">
-			<div class="row-fluid">
-				<header>
-					<div class="span6">
-						<h1>Alan Illing</h1>
-					</div>
-					<div class="span6">
-						<div>
-							
-				             <a href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href)+'&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )" 
-				                              title="PDF" class="pull-right btn">
-				                              <i class="icon-download"></i> PDF</a>
-				             <noscript>
-				                    <a href="http://www.pdfspot.com" title="PDF" class="pull-right btn"><i class="icon-download"></i> PDF</a>
-				             </noscript>
-						</div>
-					</div>
-				</header>
-			</div>
-			<hr class="soften"/>
-			
-			<div class="row-fluid blok-2">
-				<div class="span2">
-					<img src="{% static "/static/img/me.png" %}" alt="" class="thumbnail pull-left"/>
-				</div>
-				<div class="span5">
-					<h2>Software engineer, entrepreneur, geek</h2>
-					<p>
-						I'm a <strong>passionate</strong> engineer who <strong>loves</strong> technology.
-						I focus on web, mobile and back-end cloud computing technologies.
-						My approach to software development is to identify and solve problems by asking the <strong>right</strong> questions
-						and thinking abstractly. I particularly enjoy problems of a quantitative or algorithmic nature. 
-					</p>
-				</div>
-				
-				<div class="span5 information">
-					<div>
-						<i class="icon-map-marker"></i> &nbsp; <a href="https://maps.google.com/maps?q=belmont+and+ashland,+chicago+il&hl=en&ll=41.939829,-87.666328&spn=0.009289,0.020084&sll=41.833733,-87.731964&sspn=0.595511,1.2854&hnear=N+Ashland+Ave+%26+W+Belmont+Ave,+Chicago,+Cook,+Illinois+60657&t=m&z=16" target="_blank">I'm in Chicago</a>
-					</div>
-					
-					<div>
-						<i class="icon-github"></i> &nbsp; <a href="https://github.com/ailling" target="_blank">Public projects</a>
-					</div>
-					
-					<div>
-						<i class="icon-linkedin-sign"></i> &nbsp; <a href="http://www.linkedin.com/pub/alan-illing/33/84a/2b9" target="_blank">Network with me</a>
-					</div>
-					
-					<div>
-						<i class="icon-twitter-sign"></i> &nbsp; <a href="http://it.twitter.com/alanilling" target="_blank">Follow me</a>
-					</div>
-					
-					<div>
-						<iframe src="http://ghbtns.com/github-btn.html?user=ailling&type=follow&count=true"
-  							allowtransparency="true" frameborder="0" scrolling="0" width="165px" height="20px"></iframe>
-					</div>
-					
-				</div>
-			</div>
-			<hr class="soften"/>
-			
-			<div class="row-fluid">
-				<div class="span6 skills">
-					<div class="span12">
-						<ul class="nav nav-list">
-							<li class="active">
-								<a href="#"><i class="icon-white icon-home"></i> Work Experience</a>
-							</li>
-						</ul>
-						
-						<h2>Project Fixup </h2>
-						<span class="label">Co-founder and Chief Technology Officer</span>
-						<p>
-							<a href="https://www.projectfixup.com" target="_blank">Project Fixup</a> is a match-making service
-							that arranges fixups (one-on-one themed dates) for its members.
-						</p>
-						<p>
-							We use smart people and smart algorithms to productively find compatibility among our members and logistically arrange dates.
-						</p>
-						
-						
-						<hr class="soften"/>
-						
-						<h2>Software Engineer II </h2>
-						<span class="label">Twitch, LLC. 2011 - 2012</span>
-						<p>
-							Twitch is a trading firm located at the Chicago Board of Trade (CBOT).
-							They are market makers that use trading algorithms to compete against others
-							for order flow and manage risk. The primary focus of the business is on
-							trade execution time and speed of the trading strategy.
-						</p>
-						
-						<p>
-							Responsibilities:
-						</p>
-						<ul>
-							<li>Trading strategy development on new products</li>
-							<li>Back-end P&amp;L tracking and reporting</li>
-							<li>Quantitative analysis of market data, strategy performance and parameter optimization</li>
-						</ul>
-						
-						<hr class="soften"/>
-						
-						<h2>Quantitative Analyst / Software Developer </h2>
-						<span class="label">Cornerstone Trading, LLC. 2009 - 2011.</span>
-						
-						<p>
-							Cornerstone was a proprietary trading group located at the Chicago Board Options Excahnge (CBOE).
-							Trading methodologies were similar to hedge funds; they underwent massive restructing in 2009
-							in the face of financial difficulties.
-						</p>
-						
-						<p>Responsibilities:</p>
-						<ul>
-							<li>Developed mathematical models for trading options</li>
-							<li>Software development for algorithmic trade execution</li>
-							<li>Analyzed mathematical models for trading and historical strategy performance</li>
-							<li>Research on GPU parallel programming, specifically nVidia CUDA</li>
-						</ul>
-						
-						<hr class="soften"/>
-						
-						<h2>Assistant Trader </h2>
-						<span class="label">Cornerstone Trading, LLC. 2006</span>
-						
-						<p>
-							Initially employed by Cornerstone after earning a Bachelor of Science, I decided
-							to seek more challenging work in graduate school.
-							
-							I left the firm on good terms and was re-employed after completing a Master of Science.
-						</p>
-						
-						<p>Responsibilities:</p>
-						<ul>
-							<li>Built tools for automating P&amp;L reporting and analyzing strategy performance</li>
-							<li>Built back-end systems for automating trade execution</li>
-						</ul>
-						
-					</div>
-				</div>
-			
-				<div class="span6 education">
-					<ul class="nav nav-list">
-						<li class="active"><a href="javascript:"><i class="icon-white icon-folder-open"></i> Education</a></li>
-					</ul>
-					
-					
-					<h2>University of Chicago</h2>
-					<span class="label">M.S. Computer Science, expected June 2013. GPA: 4.0</span>
-					<p>
-						Coursework focus on numerical methods, distributed and parallel computing, algorithms, unix programming, networks and security.
-					</p>
-					
-					<p>My primary interests in computer science are:</p>
-					<ul>
-						<li>Social apps to better connect people</li>
-						<li>Cloud and distributed computing; scaling problems</li>
-						<li>Quantitative and statistical problems</li>
-						<li>Security</li>
-					</ul>
-					
-					<hr class="soften"/>
-					<h2>Univeristy of Illinois, Champaign-Urbana</h2>
-					<span class="label">M.S. Finance, May 2008</span>
-					<p>
-						Awarded as a Ph.D. candidate for partial completion of the docorate program.
-						All courses were taken at the Ph.D. level and emphasized mathematics, especially stochastic calculus, advanced probability and statistics, and econometrics.
-						I left the docorate program after 2 years.
-					</p>
-					
-					<hr class="soften"/>
-					<h2>Univeristy of Illinois, Champaign-Urbana</h2>
-					<span class="label">B.S. Mathematics &amp; Actuarial Science, May 2006</span>
-					<p>
-						Coursework emphasized engineering and actuarial-related mathematics, including
-						ordinary and partial differential equations, probability &amp; statistics, analysis of loss distributions and finance.
-						I additionally took several computer science courses including theory, data structures, databases, parallel programming and several courses on various programming languages including C, C++ and Java.
-					</p>
-					
-					<p>Awards</p>
-					<ul>
-						<li>Magna Cum Laude</li>
-						<li>Actuarial Science Department High Distinction</li>
-						<li>Phi Scholars Member</li>
-					</ul>
-				</div>
-			</div>
-			
-			
-			<hr class="soften"/>
-			
-			<div class="row-fluid skills">
-				<div class="span8">
-					<h2>Recent work</h2>
-					<ul>
-						<li>
-							<a href="https://www.projectfixup.com/">Project Fixup</a>
-						</li>
-						<li>
-							<a href="http://www.botrocket.com/">Bot Rocket</a>
-						</li>
-						<li>
-							<a href="http://www.djangoperformance.com/">Django Performance</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+<!-- saved from url=(0039)http://kamsolutions.pl/projects/resume/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alan Illing's Resume</title>
+    <link href="http://kamsolutions.pl/projects/resume/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://kamsolutions.pl/projects/resume/css/font-awesome.css" rel="stylesheet">
+    <link href="http://kamsolutions.pl/projects/resume/css/main.css" rel="stylesheet">
+
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/font-awesome.css" %}" rel="stylesheet">
+    <link href="{% static "css/main.css" %}" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+<script src="{% static "js/html5shiv.js" %}"></script>
+<script src="{% static "js/respond.min.js" %}"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+<div class="row">
+    <div class="col-xs-12">
+        <div id="photo-header" class="text-center">
+            <div id="photo">
+                <img src="{% static "img/alan.png" %}" alt="avatar">
+            </div>
+            <div id="text-header">
+                <h1>Alan Illing<br> I'm a fanatic <span>software engineer</span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-7">
+    <div class="box">
+        <h2>About Me</h2>
+        <p>
+            I am a quantitative software engineer with experience in financial trading (options, equities and futures).
+
+            I co-founded a startup in 2012, recently graduated from the Chicago TechStars 2013 startup accelerator program (1% acceptance rate) and have built various projects around the web.
+
+        </p>
+
+        <p>
+            I'm spending my life tinkering with technologies and making them work better.
+        </p>
+    </div>
+    <!-- EDUCATION -->
+    <div class="box">
+        <h2>Education</h2>
+        <ul id="education" class="clearfix">
+            <li>
+                <div class="year pull-left">2013</div>
+                <div class="description pull-right">
+                    <h3>M.S. Computer Science</h3>
+                    <h4>University of Chicago</h4>
+
+                    <p>
+                        Coursework included applied parallel computing, algorithms, databases,
+                        network topology, security, linux programming. GPA: 4.0
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="year pull-left">2008</div>
+                <div class="description pull-right">
+                    <h3>M.S. Finance</h3>
+                    <h4>University of Illinois at Urbana-Champaign</h4>
+                    <p>
+                        Earned in pursuit of a doctorate degree in Finance. Coursework
+                        was highly technical, covering stochastic calculus,
+                        econometrics and several seminars covering financial theory and empirics.
+                        GPA: 3.5
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="year pull-left">2006</div>
+                <div class="description pull-right">
+                    <h3>B.S. Mathematics, Magna Cum Laude</h3>
+                    <h4>University of Illinois at Urbana-Champaign</h4>
+                    <p>
+                        Coursework: statistics and probability theory, ordinary and partial differential equations,
+                        actuarial science. Also earned a minor in computer science. GPA: 3.85
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- EXPERIENCES -->
+    <div class="box">
+        <h2>Experience</h2>
+
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="where">
+                    <a href="http://startupallies.com/" target="_blank">
+                        Startup Allies
+                    </a>
+                </div>
+                <div class="year">2013 - Present</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">Founder</div>
+                <div class="description">
+                    Startup Allies provides consulting and software development
+                    services for startups, new projects and small businesses.
+                </div>
+            </div>
+        </div>
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="where">Project Fixup</div>
+                <div class="year">2013 - 2014</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">Co-founder, Chief Technology Officer</div>
+                <div class="description">
+                    A dating site that matched people using statistical analysis to predict mutual acceptance. I was the co-founder and Chief Technology Officer.
+
+                    Our platform was built as a web application using a mobile-first design. We provided matchmaking, partially driven by crowd-sourced labor for match identification, routed phone calls and text messages privately for anonymous communication with prospective dates and experimented with Freebase and OpenGraph for mining similar interests among users.
+                </div>
+            </div>
+        </div>
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="where">Twitch, LLC</div>
+                <div class="year">2013 - 2014</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">Software Engineer II</div>
+                <div class="description">Twitch is a proprietary market making firm. I worked as a software engineer to develop quantitative trading strategies and backend reporting, simulation and testing systems.
+
+                    These systems included front-end trading strategies, analytics, profit and loss reporting, viewing market data and emulating trading strategies in a development environment for testing strategies.</div>
+            </div>
+        </div>
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="where">Cornerstone Trading, LLC</div>
+                <div class="year">2008 - 2012</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">Software Developer</div>
+                <div class="description">
+                    Cornerstone was a proprietary trading group that reorganized in 2010. I was a quantitative analyst and software developer responsible for building custom user interfaces, backtest analysis, custom user interfaces for trade execution and general position management.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Current projects</h2>
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="year">2013 - Present</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">
+                    <a href="https://www.quantnode.com">
+                        Quantnode
+                    </a>
+                </div>
+                <div class="description">
+                    Quantnode is a platform for building and backtesting
+                    trading algorithms in the cloud. It's currently a Python framework designed
+                    for parallel execution of a trading strategy.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="year">2013 - Present</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">
+                    <a href="https://www.pairstrader.com">
+                        Pairs Trader
+                    </a>
+                </div>
+                <div class="description">
+                    Pairs Trader delivers analytics, customizable charts and email alerts
+                    for pairs trading and statistical arbitrage. It calculates key
+                    metrics such as cointegration and
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="col-xs-12 col-sm-5">
+    <!-- CONTACT -->
+    <div class="box clearfix">
+        <h2>Contact</h2>
+        <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+            <div class="title pull-right">LinkedIn</div>
+            <div class="description pull-right">
+                <a href="http://www.linkedin.com/in/alanilling/">http://www.linkedin.com/in/alanilling/</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
+            <div class="title pull-right">Twitter</div>
+            <div class="description pull-right">
+                <a href="https://twitter.com/alanilling">
+                    https://twitter.com/alanilling
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- SKILLS -->
+    <div class="box">
+        <h2>Skills</h2>
+
+        <h5>Programming languages</h5>
+        <div class="skills">
+            <div class="item-skills" data-percent="1.00" style="width: 458px;">Python</div>
+            <div class="item-skills" data-percent="0.90" style="width: 458px;">Javascript</div>
+            <div class="item-skills" data-percent="0.60" style="width: 412.2px;">C#</div>
+            <div class="item-skills" data-percent="0.40" style="width: 366.4px;">C/C++</div>
+            <div class="item-skills" data-percent="0.40" style="width: 343.5px;">Java</div>
+            <div class="skills-legend clearfix">
+                <div class="legend-left legend">Beginner</div>
+                <div class="legend-left legend"><span>Proficient</span></div>
+                <div class="legend-right legend"><span>Expert</span></div>
+                <div class="legend-right legend">Master</div>
+            </div>
+        </div>
+
+        <h5>Frameworks and libraries</h5>
+        <div class="skills">
+            <div class="item-skills" data-percent="1.00" style="width: 458px;">Django</div>
+            <div class="item-skills" data-percent="1.00" style="width: 412.2px;">jQuery, Underscore, Bootstrap</div>
+
+            <div class="item-skills" data-percent="0.90" style="width: 412.2px;">AngularJS</div>
+            <div class="item-skills" data-percent="0.90" style="width: 366.4px;">Celery</div>
+            <div class="item-skills" data-percent="0.70" style="width: 366.4px;">RabbitMQ</div>
+            <div class="item-skills" data-percent="0.30" style="width: 343.5px;">ZeroMQ</div>
+            <div class="item-skills" data-percent="0.30" style="width: 343.5px;">.NET</div>
+            <div class="skills-legend clearfix">
+                <div class="legend-left legend">Beginner</div>
+                <div class="legend-left legend"><span>Proficient</span></div>
+                <div class="legend-right legend"><span>Expert</span></div>
+                <div class="legend-right legend">Master</div>
+            </div>
+        </div>
+
+        <h5>Databases</h5>
+        <div class="skills">
+            <div class="item-skills" data-percent="1.00" style="width: 458px;">MySQL</div>
+            <div class="item-skills" data-percent="0.90" style="width: 412.2px;">MongoDB</div>
+            <div class="item-skills" data-percent="0.60" style="width: 412.2px;">PostgreSQL</div>
+            <div class="item-skills" data-percent="0.30" style="width: 366.4px;">Redis</div>
+            <div class="item-skills" data-percent="0.30" style="width: 412.2px;">PostGIS</div>
+            <div class="skills-legend clearfix">
+                <div class="legend-left legend">Beginner</div>
+                <div class="legend-left legend"><span>Proficient</span></div>
+                <div class="legend-right legend"><span>Expert</span></div>
+                <div class="legend-right legend">Master</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HONORS / AWARDS -->
+    <div class="box">
+        <h2>Honors, awards, organizations</h2>
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="year">2013</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">
+                    <a href="http://www.techstars.com/">
+                        TechStars Alumnus
+                    </a>
+                </div>
+                <div class="description">
+                    TechStars is a prestigous startup accelerator, typically
+                    accepting about 1% of applicants. I was admitted
+                    to the summer 2013 class.
+                </div>
+            </div>
+        </div>
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="year">2013</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">
+                    <a href="http://research.chicagobooth.edu/nvc/">New Venture Challenge Winner</a>
+                </div>
+                <div class="description">
+                    The New Venture Challenge is an entrepreneurship competition
+                    hosted by the University of Chicago. My company at the time, Project
+                    Fixup, was awarded third place.
+                </div>
+            </div>
+        </div>
+
+        <div class="job clearfix">
+            <div class="col-xs-3">
+                <div class="year">2005</div>
+            </div>
+            <div class="col-xs-9">
+                <div class="profession">
+                    Phi Scholars
+                </div>
+                <div class="description">
+                    Invite-only academic club for outstanding scholarship.
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+</div>
+</div>
+
+<script src="{% static "js/jquery.min.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/scripts.js" %}"></script>
+
+</body></html>
